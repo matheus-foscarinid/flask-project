@@ -4,4 +4,8 @@ hello_bp = Blueprint('hello', __name__)
 
 @hello_bp.route('/')
 def index():
-    return "Hello, World!"
+    return "Olá, Mundo!"
+
+@hello_bp.route('/sobre')
+def about():
+    return "Olá, Matheus!"
